@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контактна форма</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Контактна форма</h1>
+    <button id="menuButton">≡</button>
+    <nav id="menu" class="hidden">
+      <a href="index.html">Портфоліо</a>
+      <a href="contact.html">Контактна форма</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Зв’язатися зі мною</h2>
+      <form>
+        <label for="name">Ім’я:</label>
+        <input type="text" id="name" name="name" placeholder="Ваше ім’я" required>
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+        <label for="service">Яка послуга цікавить:</label>
+        <input type="text" id="service" name="service" placeholder="Наприклад: створення сайту" required>
+
+        <label for="description">Опис потрібної послуги:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Опишіть коротко, що потрібно..."></textarea>
+
+        <div class="form-buttons">
+          <button type="submit">Відправити</button>
+          <button type="reset">Очистити</button>
+        </div>
+      </form>
+
+      <div class="contacts">
+        <p>Telegram: <a href="https://t.me/yourusername" target="_blank">@yourusername</a></p>
+        <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Веброзробка — навчальний проєкт</p>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu');
+    menuButton.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Візитка веброзробника</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ігор Пилипчак</h1>
+    <button id="menuButton">≡</button>
+    <nav id="menu" class="hidden">
+      <a href="index.html">Портфоліо</a>
+      <a href="contact.html">Контактна форма</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Студент ХНТУ</h2>
+      <p>Факультет інформаційних технологій та дизайну<br>
+         Спеціальність: 123 «Комп’ютерна інженерія», бакалавр, 3 курс, група 3КСМ
+      </p>
+      <p>Я займаюсь веброзробкою, створюючи адаптивні та зручні інтерфейси на HTML, CSS і JavaScript. Маю практичний досвід у верстці сторінок, базовій логіці клієнтських застосунків і розуміння побудови сучасних вебпроєктів.</p>
+      <p><strong>Напрям:</strong> Fullstack розробка</p>
+    </section>
+
+    <section class="card">
+      <h2>Портфоліо</h2>
+      <ul>
+        <li>Лендінг для ІТ-компанії</li>
+        <li>Сторінка-візитка розробника</li>
+        <li><em>Мініблог із використанням JavaScript</em></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Веброзробка — навчальний проєкт</p>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu');
+    menuButton.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
