@@ -3,47 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Візитка веброзробника</title>
+  <title>Візитка веброзробника — Ігор Пилипчак</title>
+
+  <link rel="canonical" href="https://site-url.com">
+
+  <meta name="description" content="Персональна візитка веброзробника Ігоря Пилипчака. HTML, CSS, JavaScript, адаптивна верстка, UI/UX, студент ХНТУ, спеціальність Комп’ютерна інженерія.">
+  <meta name="keywords" content="веброзробник, Ігор Пилипчак, портфоліо, HTML, CSS, JavaScript, сайт-візитка, студент ХНТУ, web developer, frontend">
+  <meta name="author" content="Ігор Пилипчак">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Візитка веброзробника — Ігор Пилипчак">
+  <meta property="og:description" content="Веброзробник: HTML, CSS, JavaScript, адаптивна верстка. Навчальний проект ХНТУ.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://site-url.com/images/preview.jpg">
+  <meta property="og:url" content="https://site-url.com">
+  <meta property="og:locale" content="uk_UA">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Візитка веброзробника — Ігор Пилипчак">
+  <meta name="twitter:description" content="HTML, CSS, JavaScript, адаптивні сайти та вебінтерфейси.">
+  <meta name="twitter:image" content="https://your-site-url.com/images/preview.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Ігор Пилипчак",
+    "jobTitle": "Web Developer",
+    "description": "Студент ХНТУ, веброзробник з досвідом роботи з HTML, CSS, JavaScript",
+    "url": "https://your-site-url.com",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "ХНТУ"
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <h1>Ігор Пилипчак</h1>
-    <button id="menuButton">≡</button>
-    <nav id="menu" class="hidden">
-      <a href="index.html">Портфоліо</a>
-      <a href="contact.html">Контактна форма</a>
+    <div class="logo"><strong>Ігор Пилипчак</strong></div>
+    <nav>
+      <a href="index.html" class="active"><strong>Головна</strong></a>
+      <a href="portfolio.html">Портфоліо</a>
+      <a href="contact.html">Контакти</a>
     </nav>
   </header>
 
-  <main>
-    <section class="card">
-      <h2>Студент ХНТУ</h2>
-      <p>Факультет інформаційних технологій та дизайну<br>
-         Спеціальність: 123 «Комп’ютерна інженерія», бакалавр, 3 курс, група 3КСМ
-      </p>
-      <p>Я займаюсь веброзробкою, створюючи адаптивні та зручні інтерфейси на HTML, CSS і JavaScript. Маю практичний досвід у верстці сторінок, базовій логіці клієнтських застосунків і розуміння побудови сучасних вебпроєктів.</p>
-      <p><strong>Напрям:</strong> Fullstack розробка</p>
-    </section>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1><strong>Сайти, створені з розумом.</strong></h1>
 
-    <section class="card">
-      <h2>Портфоліо</h2>
-      <ul>
-        <li>Лендінг для ІТ-компанії</li>
-        <li>Сторінка-візитка розробника</li>
-        <li><em>Мініблог із використанням JavaScript</em></li>
-      </ul>
-    </section>
-  </main>
+      <p><em>Студент ХНТУ — Факультет інформаційних технологій та дизайну</em><br>
+      Спеціальність: <strong>123 «Комп’ютерна інженерія»</strong>, бакалавр, 3 курс, група <strong>3КСМ</strong></p>
 
-  <footer>
-    <p>© 2025 Веброзробка — навчальний проєкт</p>
+      <p>Я — <strong>веброзробник</strong>, що поєднує технічну логіку з креативністю. 
+      Створюю <em>адаптивні сторінки</em>, <strong>сучасні інтерфейси</strong> та легку взаємодію з користувачем.</p>
+
+      <div class="buttons">
+        <a href="portfolio.html" class="btn primary"><strong>Переглянути роботи</strong></a>
+        <a href="contact.html" class="btn secondary"><em>Зв’язатись</em></a>
+      </div>
+    </div>
+  </section>
+
+<section class="about-section">
+  <div class="container">
+    <h2 class="section-title">Про мене</h2>
+    <p class="about-text">
+      Я — веброзробник, який працює з <strong>HTML, CSS та JavaScript</strong>. Створюю адаптивні,
+      швидкі та структуровані вебсторінки, орієнтовані на сучасні вимоги користувачів
+      і пошукових систем.  
+      Дотримуюсь принципів <strong>UI/UX</strong>, семантики та доступності, щоб створювати зручні 
+      й приємні інтерфейси.
+    </p>
+  </div>
+</section>
+
+<section class="skills-section">
+  <div class="container">
+    <h2 class="section-title">Мої навички</h2>
+
+    <ul class="skills-list">
+      <li><span>✔</span> <strong>HTML5</strong> та семантична верстка</li>
+      <li><span>✔</span> <strong>CSS3</strong>, Flexbox, Grid</li>
+      <li><span>✔</span> <strong>JavaScript (ES6+)</strong></li>
+      <li><span>✔</span> Адаптивність та <em>кросбраузерність</em></li>
+      <li><span>✔</span> Оптимізація швидкодії та <strong>SEO</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section class="benefits-section">
+  <div class="container">
+    <h2 class="section-title">Чому саме я?</h2>
+
+    <div class="benefit-cards">
+      <div class="benefit-card"><strong>Сучасний підхід</strong> до верстки</div>
+      <div class="benefit-card">Чистий та <em>структурований</em> код</div>
+      <div class="benefit-card"><strong>Комунікація</strong> та відповідальність</div>
+      <div class="benefit-card">Орієнтація на <em>результат</em></div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo"><strong>ІП</strong></div>
+      <p>© 2025 <strong>Ігор Пилипчак</strong>. Усі права захищені.</p>
+
+      <div class="footer-links">
+        <a href="#"><em>Політика конфіденційності</em></a>
+        <span>|</span>
+        <a href="#"><em>Умови використання</em></a>
+        <span>|</span>
+        <a href="#"><em>Файли cookie</em></a>
+        <span>|</span>
+        <a href="contact.html"><strong>Звʼязатися</strong></a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+      <a href="index.html"><strong>Головна</strong></a>
+      <span>|</span>
+      <a href="portfolio.html">Портфоліо</a>
+      <span>|</span>
+      <a href="contact.html">Контакти</a>
+      <span>|</span>
+      <a href="#">Про сайт</a>
+    </div>
   </footer>
-
+  <button id="backToTopBtn"></button>
+  
   <script>
     const menuButton = document.getElementById('menuButton');
     const menu = document.getElementById('menu');
     menuButton.addEventListener('click', () => menu.classList.toggle('hidden'));
   </script>
+  
+<script src="script.js"></script>
 </body>
 </html>

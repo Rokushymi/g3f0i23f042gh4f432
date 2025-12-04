@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфоліо — Ігор Пилипчак</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="" class="script.js">
+</head>
+<script>
+function searchProject() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const projects = document.querySelectorAll(".project-card");
+
+  projects.forEach(card => {
+    const title = card.querySelector("h3").textContent.toLowerCase();
+    if (title.includes(input) || input === "") {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+</script>
+
+<body>
+  <header>
+    <div class="logo">Ігор Пилипчак</div>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="portfolio.html" class="active">Портфоліо</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+  </header>
+
+  <section class="portfolio">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Моє портфоліо</h1>
+      <p>Від ідей до готових рішень — створюю адаптивні, швидкі та зручні вебінтерфейси.</p>
+    </div>
+  </section>
+
+  <main class="portfolio-content">
+    <section class="skills">
+      <h2>Мої навички</h2>
+      <p>Працюю з HTML5, CSS3 та JavaScript. Розробляю інтерфейси, які добре виглядають на будь-якому пристрої. Знайомий з Git, Figma та сучасними методами адаптивної верстки.</p>
+      <div class="skill-list">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Git</span>
+        <span>Figma</span>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Приклади проєктів</h2>
+      <div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Пошук проєкту за назвою...">
+  <button class="btn primary" onclick="searchProject()">Пошук</button>
+</div>
+<div class="project-grid">
+
+  <div class="project-grid">
+
+  <div class="project-card">
+    <h3>Лендінг для ІТ-компанії</h3>
+    <p>Адаптивна сторінка з акцентом на дизайн і зручність.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Візитка розробника</h3>
+    <p>Особиста сторінка з портфоліо, створена на HTML і CSS.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Мініблог на JavaScript</h3>
+    <p>Функціональний блог з динамічним додаванням постів.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Галерея фотографій</h3>
+    <p>Інтерактивна галерея з модальним вікном та фільтрами.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Онлайн-каталог товарів</h3>
+    <p>Прототип e-commerce каталогу з картками та сортуванням.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Трекер завдань</h3>
+    <p>Міні-застосунок для створення та керування списками задач.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Калькулятор на JavaScript</h3>
+    <p>Функціональний калькулятор з базовими математичними операціями.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Новинний портал</h3>
+    <p>Сторінка зі стрічкою новин та адаптивним інтерфейсом.</p>
+  </div>
+
+</div>
+
+    </section>
+
+    <section class="tools">
+      <h2>Інструменти розробника</h2>
+      <ul>
+        <li>VS Code — основне середовище розробки</li>
+        <li>GitHub — зберігання та спільна робота над кодом</li>
+        <li>Chrome DevTools — налагодження та тестування верстки</li>
+      </ul>
+    </section>
+  </main>
+
+  <button id="backToTopBtn"></button>
+  <footer>
+    <p>© 2025 Ігор Пилипчак — навчальний проєкт</p>
+  </footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
